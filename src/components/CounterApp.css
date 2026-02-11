@@ -1,0 +1,80 @@
+/* Page background */
+.page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e1e2f, #0f0f1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Title */
+.heading {
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b3b3ff;
+  margin-bottom: 25px;
+}
+
+/* Counter number */
+.count {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 35px;
+  transition: transform 0.15s ease;
+}
+
+/* Button layout */
+.actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Base button */
+.btn {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 22px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+/* Button styles */
+.primary {
+  background: linear-gradient(135deg, #6c63ff, #8f87ff);
+}
+
+.secondary {
+  background: linear-gradient(135deg, #ff5c5c, #ff7b7b);
+}
+
+.ghost {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+/* Hover effects */
+.btn:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
